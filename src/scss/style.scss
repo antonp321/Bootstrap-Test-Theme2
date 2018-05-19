@@ -1,0 +1,161 @@
+nav {
+  .container{
+    a{
+        span {
+          @media (max-width: 992px) {
+            font-size: 2.2em;
+          }
+
+          @media (max-width: 768px) {
+            font-size: 1.5em;
+          }
+
+          @media (max-width: 576px) {
+            font-size: 1.2em;
+          }
+        }
+        &:hover {
+          text-decoration: none;
+        }
+    }
+
+    #navbarNav{
+      ul{
+        li{
+          &:hover{
+            background-color: lightgrey;
+            border: 1px solid;
+            border-color: lightgrey;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#hsection{
+  background: url('https://i2-prod.liverpoolecho.co.uk/incoming/article11688819.ece/ALTERNATES/s615/GL889978.jpg')no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+
+  .overlay{
+    background-color: rgba(255, 5, 5, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 700px;
+
+    .container {
+
+      padding-top: 180px;
+
+      #readMoreH{
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        border: 2px solid;
+        border-color: white;
+
+        &:hover{
+          background-color: white;
+          color: red!important;
+
+          i{
+            color: red!important;
+          }
+        }
+      }
+    }
+  }
+}
+
+#formSection{
+  height: 80px;
+
+  @media (max-width: 576px) {
+    height: 200px;
+  }
+}
+
+#boxSection{
+  .bg-light{
+    border: 1px solid;
+    border-color: #FF0505;
+    color:#FF0505!important;
+  }
+
+  .bg-danger{
+    background-color: #FF0505!important;
+    border: 1px solid;
+    border-color: white;
+  }
+}
+
+#aboutSection{
+  .container{
+    .row{
+      #textAbout{
+        border-bottom: 1px solid;
+        border-color: lightgrey;
+      }
+    }
+  }
+}
+
+#authorSection{
+
+  .container{
+    .row{
+      #authorsAbout{
+        border-bottom: 1px solid;
+        border-color: lightgrey;
+      }
+      .card-body{
+
+        &:hover{
+          background-color: #FF0505;
+          color: white;
+
+          i{
+            color: white!important;
+          }
+        }
+
+        i{
+          color: #FF0505;
+
+          &:hover{
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+#touchSection{
+  .container{
+    .row{
+      form{
+        .form-group{
+          .bg-secondary{
+            width: 5%;
+
+            i{
+              margin-top: 10px;
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#footerSection{
+  background-color: #FF0505;
+  color: white;
+  height: 300px;
+}
